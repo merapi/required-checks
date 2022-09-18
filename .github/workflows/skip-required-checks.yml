@@ -1,0 +1,21 @@
+name: Skip required checks
+
+on:
+  push:
+    branches: [ "master" ]
+    paths-ignore:
+      - '**.tsx'
+      - '**.ts'
+  pull_request:
+    branches: [ "master" ]
+    paths-ignore:
+      - '**.tsx'
+      - '**.ts'
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "Skip required checks when job was not triggered"'
