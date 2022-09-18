@@ -17,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Reac
         </a>
         <div>
           <button onClick={() => setCounter(c => c + 1)}>Increment {counter}</button>
